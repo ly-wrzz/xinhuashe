@@ -1,4 +1,4 @@
-const dir = "20200104_tenglong_aoba" //项目目录
+const dir = "20200103_xhs_web" //项目目录
     , fs          = require('fs')
     , gulp        = require('gulp')
     , template    = require('gulp-template')
