@@ -1,0 +1,21 @@
+mixin head
+    head
+        meta(charset="utf-8")
+        - if(attributes.mobile)
+            meta(name="viewport",content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        - if(attributes.title)
+            title=attributes.title
+        link(rel="stylesheet" href="//minisite.hocodo.com/common/reset.css")
+        - if(attributes.import&&!attributes.nomain)
+            link(rel="stylesheet" href="res/styles/bundle.css?v=")
+        script(src="//minisite.hocodo.com/common/jquery.min.js")
+        if block
+            block
+        - if(attributes.import&&!attributes.nomain)
+            script(src="res/scripts/bundle.js?v=")
+        - if(attributes.mobile)
+            -if(attributes.rem == 750)
+                script(src="//minisite.hocodo.com/common/rem.750.js")
+            -if(attributes.rem == 870)
+                script(src="//minisite.hocodo.com/common/rem.870.js")
+            
