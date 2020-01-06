@@ -111,21 +111,80 @@ title 样式
     @include cover("badge.png")
   }
 }
-
 /*
-bottom板块
+图片 板块
 */
-.bottom{
+.picture{
+  width: 1168px;
+  margin: 0 auto;
+  .box-title{
+    margin-bottom: 30px;
+  }
+  .picture-title{
+    width: 943px;
+    height: 42px;
+    font-style: italic;
+    @include cover("picture-title-bg.png");
+    li{
+      width: 188px;
+      height: 42px;
+      text-align: center;
+      line-height: 38px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #d3a4a4;
+      cursor: pointer;
+      &.active{
+        color: #fff;
+      }
+    }
+  }
+}
+/*
+文章 板块
+article1 | 会议动态 & 工作报告
+article2 | 会场内外 & 媒体报道
+*/
+.article1,
+.article2{
   margin: 0 auto;
   width: 1164px;
-  .bottom-left{
+  padding: 82px 0 74px;
+  overflow: hidden;
+  .article1-left,
+  .article1-right,
+  .article2-left,
+  .article2-right{
     width: 553px;
     .content-list{
       color: #333;
       font-size: 16px;
+      padding-top: 36px;
+      .content-list-li{
+        position: relative;
+        text-indent: 28px;
+        height: 47px;
+        line-height: 47px;
+        @include nowrap();
+        a{
+          color: #333;
+        }
+        &:before{
+          position: absolute;
+          left: -26px;
+          top: -2px;
+          content: "·";
+          font-size: 60px;
+          color: #cb0000;
+        }
+      }
     }
   }
-  .bottom-right{
+  .article1-right,
+  .article2-right{
     width: 550px;
+  }
+  .article1{
+    padding: 62px 0 38px;
   }
 }
