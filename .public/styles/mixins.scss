@@ -423,15 +423,15 @@
 }
 
 @mixin cover($src, $size:100% 100%, $position:center center,$imprtant:''){
-  background:url(images/#{$src}) #{$position} no-repeat #{$imprtant};
+  background:url(#{$src}) #{$position} no-repeat #{$imprtant};
   background-size:#{$size};
 }
 @mixin coverjpg($src, $size:cover, $position:center center,$imprtant:''){
-  background:url(images/#{$src}) #{$position} no-repeat #{$imprtant};
+  background:url(#{$src}) #{$position} no-repeat #{$imprtant};
   background-size:#{$size};
 }
 @mixin coverpc($src,$position:center center,$imprtant:''){
-  background:url(images/#{$src}.png) #{$position} no-repeat #{$imprtant};
+  background:url(#{$src}.png) #{$position} no-repeat #{$imprtant};
 }
 
 @mixin bgwh($src,$width:100%,$height:100%,$size:cover){
@@ -441,10 +441,10 @@
 }
 
 @mixin bimg($src,$sprite:''){
-    background-image:url(images/#{$src}.png#{$sprite});
+    background-image:url(#{$src}.png#{$sprite});
 }
 @mixin bg($src, $position:center center){
-    background:url(images/#{$src}.png) #{$position} no-repeat;
+    background:url(#{$src}.png) #{$position} no-repeat;
 }
 
 @mixin placeholder($color:#666){

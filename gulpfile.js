@@ -63,7 +63,7 @@ createCopyTask('public', './.public/scripts/**/**', dir+'/res/scripts');
 gulp.task('copy',['public']);
 
 gulp.task('js', ()=>{
-    gulp.src(dev+'/res/scripts/_*.js')
+    gulp.src(dev+'/res/scripts/*.js')
         .pipe(babel({
             presets:['es2015']
         }))
@@ -126,7 +126,7 @@ gulp.task('serve', ['sass', 'pug', 'js'], ()=>{
         server: dev
     });
     gulp.watch(dir + '/res/styles/*.scss', ['sass']);
-    gulp.watch(dir + '/res/scripts/_*.js', ['js']);
+    gulp.watch(dir + '/res/scripts/*.js', ['js']);
     gulp.watch(dir + '/pug/*.pug', ['pug']);
     gulp.watch(dir + '/*.pug', ['pug']);
     gulp.watch('.public/**/*.pug', ['pug']);
