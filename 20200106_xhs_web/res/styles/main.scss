@@ -68,3 +68,25 @@ textarea,input[type="text"],input[type="tel"]{
 /*
 请开始你的表演
  */
+.baaner{
+  width: 100%;
+  height: auto;
+  position: relative;
+  .baaner-img{
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+  .badge{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 60px auto 0;
+    width: 66px;
+    height: 68px;
+    @include cover("badge.png")
+  }
+}
