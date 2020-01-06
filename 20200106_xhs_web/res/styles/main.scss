@@ -121,12 +121,12 @@ title 样式
     margin-bottom: 30px;
   }
   .picture-title{
-    width: 943px;
+    width: 908px;
     height: 42px;
     font-style: italic;
     @include cover("picture-title-bg.png");
     li{
-      width: 188px;
+      width: 180px;
       height: 42px;
       text-align: center;
       line-height: 38px;
@@ -136,6 +136,8 @@ title 样式
       cursor: pointer;
       &.active{
         color: #fff;
+        width: 186px;
+        @include cover("picture-title-actbg.png");
       }
     }
   }

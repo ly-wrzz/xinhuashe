@@ -100,7 +100,7 @@ title 样式
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  background: url("title-bg.png?v=6e3d17") 0 bottom no-repeat ;
+  background: url("title-bg.png?v=5ab895") 0 bottom no-repeat ;
   background-size: 190px 19px; }
   .box-title .more-right {
     position: absolute;
@@ -116,7 +116,7 @@ title 样式
   width: 100%;
   height: 500px;
   position: relative;
-  background: url("banner.jpg?v=6e3d17") center center no-repeat ;
+  background: url("banner.jpg?v=5ab895") center center no-repeat ;
   background-size: 100% 100%; }
   .baaner .baaner-img {
     position: absolute;
@@ -132,7 +132,7 @@ title 样式
     margin: 60px auto 0;
     width: 66px;
     height: 68px;
-    background: url("badge.png?v=6e3d17") center center no-repeat ;
+    background: url("badge.png?v=5ab895") center center no-repeat ;
     background-size: 100% 100%; }
 
 /*
@@ -144,13 +144,13 @@ title 样式
   .picture .box-title {
     margin-bottom: 30px; }
   .picture .picture-title {
-    width: 943px;
+    width: 908px;
     height: 42px;
     font-style: italic;
-    background: url("picture-title-bg.png?v=6e3d17") center center no-repeat ;
+    background: url("picture-title-bg.png?v=5ab895") center center no-repeat ;
     background-size: 100% 100%; }
     .picture .picture-title li {
-      width: 188px;
+      width: 180px;
       height: 42px;
       text-align: center;
       line-height: 38px;
@@ -159,7 +159,10 @@ title 样式
       color: #d3a4a4;
       cursor: pointer; }
       .picture .picture-title li.active {
-        color: #fff; }
+        color: #fff;
+        width: 186px;
+        background: url("picture-title-actbg.png?v=5ab895") center center no-repeat ;
+        background-size: 100% 100%; }
 
 /*
 文章 板块
