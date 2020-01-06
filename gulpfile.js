@@ -67,9 +67,9 @@ gulp.task('js', ()=>{
         .pipe(babel({
             presets:['es2015']
         }))
-        .pipe(concat('bundle.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(dev+'/res/scripts'))
+        // .pipe(concat('bundle.js'))
+        // .pipe(uglify())
+        .pipe(gulp.dest(dev+'/images'))
         .pipe(reload({stream:true}))
 })
 
@@ -87,15 +87,15 @@ gulp.task('sass', ()=>{
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(rev({verStr:verStr}))
-        .pipe(cleanCSS())
-        .pipe(concat('bundle.css'))
-        .pipe(gulp.dest(dev+'/res/styles'))
+        // .pipe(cleanCSS())
+        // .pipe(concat('bundle.css'))
+        .pipe(gulp.dest(dev+'/images'))
         .pipe(reload({stream:true}))
 })
 
 gulp.task('sourceArr', ()=>{
     var imgList = [];
-    var files = fs.readdirSync(dev+'/res/images/');
+    var files = fs.readdirSync(dev+'/images/');
     files.forEach((itm)=>{
         imgList.push(itm);
     });

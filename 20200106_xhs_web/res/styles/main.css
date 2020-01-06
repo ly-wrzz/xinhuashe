@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: '微软雅黑'; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: 0;
+  background: none;
+  padding: 0; }
+
+a, button, label, select, input {
+  outline: none; }
+
+textarea, input[type="text"], input[type="tel"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; }
+
+.clearfix:before {
+  display: table;
+  content: " "; }
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.fl-l {
+  float: left; }
+
+.fl-r {
+  float: right; }
+
+/*
+title 样式
+*/
+.box-title {
+  height: 58px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #bda27a;
+  text-indent: 4px;
+  color: #cb0000;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  background: url("../images/title-bg.png?v=cba593") 0 bottom no-repeat ;
+  background-size: 190px 19px; }
+  .box-title .more-right {
+    position: absolute;
+    margin: 36px 4px 0 0;
+    right: 0;
+    color: #999;
+    font-size: 14px; }
+
+/*
+请开始你的表演
+ */
+.baaner {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background: url("../images/banner.jpg?v=cba593") center center no-repeat ;
+  background-size: 100% 100%; }
+  .baaner .baaner-img {
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: auto;
+    top: 0;
+    left: 0; }
+  .baaner .badge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 60px auto 0;
+    width: 66px;
+    height: 68px;
+    background: url("../images/badge.png?v=cba593") center center no-repeat ;
+    background-size: 100% 100%; }
+
+/*
+bottom板块
+*/
+.bottom {
+  margin: 0 auto;
+  width: 1164px; }
+  .bottom .bottom-left {
+    width: 553px; }
+    .bottom .bottom-left .content-list {
+      color: #333;
+      font-size: 16px; }
+  .bottom .bottom-right {
+    width: 550px; }
