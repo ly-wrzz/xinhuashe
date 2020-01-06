@@ -100,7 +100,7 @@ title 样式
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  background: url("title-bg.png?v=5ab895") 0 bottom no-repeat ;
+  background: url("title-bg.png?v=a87203") 0 bottom no-repeat ;
   background-size: 190px 19px; }
   .box-title .more-right {
     position: absolute;
@@ -116,7 +116,7 @@ title 样式
   width: 100%;
   height: 500px;
   position: relative;
-  background: url("banner.jpg?v=5ab895") center center no-repeat ;
+  background: url("banner.jpg?v=a87203") center center no-repeat ;
   background-size: 100% 100%; }
   .baaner .baaner-img {
     position: absolute;
@@ -132,7 +132,7 @@ title 样式
     margin: 60px auto 0;
     width: 66px;
     height: 68px;
-    background: url("badge.png?v=5ab895") center center no-repeat ;
+    background: url("badge.png?v=a87203") center center no-repeat ;
     background-size: 100% 100%; }
 
 /*
@@ -144,10 +144,12 @@ title 样式
   .picture .box-title {
     margin-bottom: 30px; }
   .picture .picture-title {
+    position: relative;
+    z-index: 3;
     width: 908px;
     height: 42px;
     font-style: italic;
-    background: url("picture-title-bg.png?v=5ab895") center center no-repeat ;
+    background: url("picture-title-bg.png?v=a87203") center center no-repeat ;
     background-size: 100% 100%; }
     .picture .picture-title li {
       width: 180px;
@@ -160,9 +162,44 @@ title 样式
       cursor: pointer; }
       .picture .picture-title li.active {
         color: #fff;
-        width: 186px;
-        background: url("picture-title-actbg.png?v=5ab895") center center no-repeat ;
+        width: 187px;
+        background: url("picture-title-actbg.png?v=a87203") center center no-repeat ;
         background-size: 100% 100%; }
+  .picture .picture-list1,
+  .picture .picture-list2,
+  .picture .picture-list3,
+  .picture .picture-list4,
+  .picture .picture-list5 {
+    position: relative;
+    z-index: 2;
+    top: -2px;
+    width: 1156px;
+    height: 408px;
+    padding-top: 10px;
+    padding-left: 8px;
+    border-top: 2px solid #bda27a;
+    background-color: #cb0000; }
+    .picture .picture-list1 li,
+    .picture .picture-list2 li,
+    .picture .picture-list3 li,
+    .picture .picture-list4 li,
+    .picture .picture-list5 li {
+      width: 280px;
+      height: 196px;
+      margin-right: 9px;
+      margin-bottom: 9px; }
+      .picture .picture-list1 li img,
+      .picture .picture-list2 li img,
+      .picture .picture-list3 li img,
+      .picture .picture-list4 li img,
+      .picture .picture-list5 li img {
+        width: 100%;
+        height: 100%; }
+  .picture .picture-list2,
+  .picture .picture-list3,
+  .picture .picture-list4,
+  .picture .picture-list5 {
+    display: none; }
 
 /*
 文章 板块
