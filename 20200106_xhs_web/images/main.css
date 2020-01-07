@@ -100,7 +100,7 @@ title 样式
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  background: url("title-bg.png?v=ebc588") 0 bottom no-repeat ;
+  background: url("title-bg.png?v=741bfe") 0 bottom no-repeat ;
   background-size: 190px 19px; }
   .box-title .more-right {
     position: absolute;
@@ -117,7 +117,7 @@ title 样式
   max-width: 1920px;
   margin: 0 auto;
   height: 500px;
-  background: url("banner.jpg?v=ebc588") center center no-repeat ;
+  background: url("banner.jpg?v=741bfe") center center no-repeat ;
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
@@ -134,7 +134,7 @@ title 样式
     margin: 60px auto 0;
     width: 66px;
     height: 68px;
-    background: url("badge.png?v=ebc588") center center no-repeat ;
+    background: url("badge.png?v=741bfe") center center no-repeat ;
     background-size: 100% 100%; }
 
 /*
@@ -172,7 +172,7 @@ title 样式
     margin-top: 4px;
     width: 102px;
     height: 86px;
-    background: url("headlines.png?v=ebc588") center center no-repeat ;
+    background: url("headlines.png?v=741bfe") center center no-repeat ;
     background-size: 100% 100%; }
   .title .word {
     margin-left: 30px; }
@@ -198,7 +198,7 @@ title 样式
       line-height: 30px;
       text-align: center;
       color: #fff;
-      background: url("date-title.png?v=ebc588") center center no-repeat ;
+      background: url("date-title.png?v=741bfe") center center no-repeat ;
       background-size: 100% 100%;
       text-indent: 8px;
       letter-spacing: 8px; }
@@ -220,6 +220,11 @@ title 样式
       color: #6b4632;
       font-size: 14px;
       text-align: center; }
+
+.line {
+  width: 1164px;
+  margin: 40px auto 48px;
+  border-bottom: 1px solid #cccccc; }
 
 /*
 图片 板块
@@ -245,35 +250,35 @@ title 样式
       font-weight: bold;
       color: #d3a4a4;
       cursor: pointer;
-      background: url("picture-title1.png?v=ebc588") center center no-repeat ;
+      background: url("picture-title1.png?v=741bfe") center center no-repeat ;
       background-size: 100% 100%; }
       .picture .picture-title li.li2 {
         left: 180px;
-        background: url("picture-title2.png?v=ebc588") center center no-repeat ;
+        background: url("picture-title2.png?v=741bfe") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li3 {
         left: 360px;
-        background: url("picture-title2.png?v=ebc588") center center no-repeat ;
+        background: url("picture-title2.png?v=741bfe") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li4 {
         left: 540px;
-        background: url("picture-title2.png?v=ebc588") center center no-repeat ;
+        background: url("picture-title2.png?v=741bfe") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li5 {
         left: 720px;
-        background: url("picture-title5.png?v=ebc588") center center no-repeat ;
+        background: url("picture-title5.png?v=741bfe") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.active {
         color: #fff;
         width: 190px;
         height: 44px;
-        background: url("picture-title-actbg.png?v=ebc588") center center no-repeat ;
+        background: url("picture-title-actbg.png?v=741bfe") center center no-repeat ;
         background-size: 100% 100%; }
         .picture .picture-title li.active.li1 {
-          background: url("picture-title-actbg1.png?v=ebc588") center center no-repeat ;
+          background: url("picture-title-actbg1.png?v=741bfe") center center no-repeat ;
           background-size: 100% 100%; }
         .picture .picture-title li.active.li5 {
-          background: url("picture-title-actbg5.png?v=ebc588") center center no-repeat ;
+          background: url("picture-title-actbg5.png?v=741bfe") center center no-repeat ;
           background-size: 100% 100%; }
   .picture .picture-list1,
   .picture .picture-list2,
