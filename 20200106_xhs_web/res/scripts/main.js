@@ -17,13 +17,30 @@ $(function () {
         },
         // 好声音轮播
         GoodVoiceAction: function() {
-            const count = $('.slide_box .bd ul li').length;
+            const count = $('.slideTxtBox .bd ul li').length;
             let pagination = [];
             for (let i; i<count; i++) {
                 pagination.push(`<li>${i+1}</li>`);
             }
             pagination = `<div class="hd"><ul>${pagination.join('')}</ul></div>`;
             $('.slideTxtBox').slide({
+                mainCell:'.bd ul',
+                effect:'left',
+                trigger:'mouseover',
+                autoPlay:true,
+                easing:'swing',
+                delayTime:800,
+                mouseOverStop:true,
+                pnLoop:true
+            })
+
+            const counts = $('.lbleft .bd ul li').length;
+            let paginations = [];
+            for (let i; i<counts; i++) {
+                paginations.push(`<li>${i+1}</li>`);
+            }
+            paginations = `<div class="hd"><ul>${paginations.join('')}</ul></div>`;
+            $('.lbleft').slide({
                 mainCell:'.bd ul',
                 effect:'left',
                 trigger:'mouseover',

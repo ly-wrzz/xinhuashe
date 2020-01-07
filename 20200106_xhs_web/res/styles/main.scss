@@ -220,6 +220,61 @@ textarea,input[type="text"],input[type="tel"]{
   border-bottom: 1px solid #cccccc;
 }
 /*
+* 标题
+*/
+.summary{
+  width: 1168px;
+  margin: 0 auto;
+  .lbleft{
+    width: 50%;
+    height: 340px;
+    .bd{
+      width: 100%;
+      height: 100%;
+      .tempWrap{
+        width: 100%;
+        height: 100%;
+        ul{
+          height: 100%;
+          li{
+            height: 100%;
+            position: relative;
+            img{
+              top: 0;
+              left: 0;
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    .text{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      @include cover("rgba.png")
+      p{
+        line-height: 50px;
+        margin-left: 20px;
+        width: 360px;
+        color: #fff;
+        @include nowrap();
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+          @include nowrapbyline(1);
+        }
+      }
+    }
+  }
+  .right{
+    width: 50%;
+  }
+}
+
+/*
 * GoodVoice
 */
 .slideTxtBox{
