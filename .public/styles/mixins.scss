@@ -409,18 +409,6 @@
 @mixin animation($str) {
   @include css3-prefix('animation', $str);
 }
-@mixin nowrap(){
-  display: -webkit-box;
-  -webkit-line-clamp:1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-@mixin nowraps($line){
-  display: -webkit-box;
-  -webkit-line-clamp:$line;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 
 @mixin cover($src, $size:100% 100%, $position:center center,$imprtant:''){
   background:url(#{$src}) #{$position} no-repeat #{$imprtant};
@@ -466,12 +454,14 @@
 }
 @mixin nowrap {
   overflow: hidden;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 @mixin nowrapbyline($line){
-  display: -webkit-box;
-  -webkit-line-clamp:$line;
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
 }
