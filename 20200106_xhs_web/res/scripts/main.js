@@ -1,4 +1,66 @@
 $(function () {
+    /**
+	 * [goToFloor 楼层定位]
+	 * @type {Object}
+	 */
+	var goToFloor = {
+		init: function(config) {
+			this.watchFloor(config);
+			this.goFloor(config);
+			this.goTop(config);
+		},
+		watchFloor: function(config) {
+			//监听滚动，高亮联动
+			$(config.className1).each( function(i, index) {
+	    		var windowTop = $(config.className1).eq(i).offset().top - 100;
+	    		$(window).scroll(function(){
+	                if($(this).scrollTop() >= windowTop ){
+	                    $(config.className2).eq(i).addClass(config.activeClassName).siblings().removeClass(config.activeClassName);
+	                }
+	            })
+			});
+		},
+		goFloor: function (config) {
+			//点击侧边
+			$(config.className2).not(config.className3).click(function() {
+                var idx = $(this).index() + 1;
+                var name = config.className4 + ($(this).index() + 1);
+                switch(idx) {
+                    case 1:
+                    case 2:
+                        name = config.className4 + 1;
+                        break;
+                    case 3:
+                    case 4:
+                        name = config.className4 + 2;
+                        break;
+                    case 5:
+                        name = config.className4 + 3;
+                        break;
+                    case 6:
+                        name = config.className4 + 4;
+                        break;
+                    default:
+                        name = config.className4 + 5;
+                        break;
+                }
+				$('body,html').animate({ 'scrollTop': $(name).offset().top}, config.speed);
+			})
+		},
+		goTop: function (config) {
+			$(config.className3).click(function(){
+				$('body,html').animate({ 'scrollTop':0 }, config.speed);
+			})
+		}
+	};
+    goToFloor.init({
+		className1: '.bgc',//[目标楼层的class类名]
+		className2: '.goto_floor',//[侧边点击的class类名]
+		className3: '.goto_top',//[返回顶部的class类名]
+		className4: '.floor',//[目标楼层公共部分的class类名比如： <div class=".floor1"></div> <div class=".floor2"></div>]
+		activeClassName: 'active',//[侧边高亮的class类名] 注意最后的这个className 没有点
+		speed: 600 // 滚动速度 越大越慢
+	});
     const xinHuaShe = {
         Init: function() {
             this.OnSiteDirectStrike();

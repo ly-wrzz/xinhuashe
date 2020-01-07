@@ -8,23 +8,23 @@ body
 		h1 重庆市第五届委员会第三次会议
 	.nav
 		ul.content.clearfix
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;").active 首页
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;") 会议要闻
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;") 会议动态
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;") 工作报告
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;") 委员好声音
-			li.fl-l
-				a(href="javascript:;") 会场内外
-			li.fl-l
+			li.fl-l.goto_floor
 				a(href="javascript:;") 现场直击
-			li.fl-l
+			li.fl-l.goto_floor
+				a(href="javascript:;") 会场内外
+			li.fl-l.goto_floor
 				a(href="javascript:;") 媒体报道
-	.title.clearfix
+	.title.clearfix.floor1.bgc
 		.log.fl-l
 		.word.fl-l
 			h1 北京市政协十三届三次会议胜利闭幕
@@ -67,7 +67,7 @@ body
 					li.content-list-li
 						span.fl-l ·
 						a.fl-r(href="javascrit:;")= item
-	.article1
+	.article1.floor2.bgc
 		.article1-left.fl-l
 			.box-title 会议动态
 				a.more-right(href="javascrit:;") 更多
@@ -86,7 +86,7 @@ body
 					li.content-list-li
 						span.fl-l ·
 						a.fl-r(href="javascrit:;")= item
-	.picture
+	.picture.floor3.bgc
 		.box-title 委员好声音
 		.slideTxtBox
 			.hd
@@ -155,7 +155,7 @@ body
 									.name 王梓涵
 									.status 市政协常委、民建市委会副主委、市场及安监局副局长
 									.info 市政协五届二次全会上，我将重点关注大南山景区在生态环境、产业转型、基础设施改善等方面的问题。 最多三行三行。
-	.picture.picture1
+	.picture.floor4.bgc
 		.box-title 现场直击
 		ul.picture-title
 			li.li1.fl-l(data-index="1").active 委员报道
@@ -188,7 +188,7 @@ body
 			each item in arr
 					li.fl-l
 						img(src=item)
-	.article2
+	.article2.floor5.bgc
 		.article2-left.fl-l
 			.box-title 会场内外
 				a.more-right(href="javascrit:;") 更多
