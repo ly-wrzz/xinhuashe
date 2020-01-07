@@ -68,34 +68,20 @@ body
 			.box-title 会议动态
 				a.more-right(href="javascrit:;") 更多
 			ul.content-list
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
+				- var arr = ['新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月丨统一全党思想、推动全面调整 1963年:石油基本自给','新中国峥嵘岁月｜“搞一个实事求是年” 勇攀世界高峰','新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？'];
+				each item in arr
+					li.content-list-li
+						span.fl-l ·
+						a.fl-r(href="javascrit:;")= item
 		.article1-right.fl-r
 			.box-title 工作报告
 				a.more-right(href="javascrit:;") 更多
 			ul.content-list
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
+				- var arr = ['新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月丨统一全党思想、推动全面调整 1963年:石油基本自给','新中国峥嵘岁月｜“搞一个实事求是年” 勇攀世界高峰','新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？'];
+				each item in arr
+					li.content-list-li
+						span.fl-l ·
+						a.fl-r(href="javascrit:;")= item
 	.picture
 		.box-title 现场直击
 		ul.picture-title
@@ -105,120 +91,46 @@ body
 			li.li4.fl-l(data-index="4") 小组会
 			li.li5.fl-l(data-index="5") 记者会
 		ul.picture-list1.picture-list
-			li.fl-l
-				img(src="/images/picture1.png")
-			li.fl-l
-				img(src="/images/picture2.png")
-			li.fl-l
-				img(src="/images/picture3.png")
-			li.fl-l
-				img(src="/images/picture4.png")
-			li.fl-l
-				img(src="/images/picture5.png")
-			li.fl-l
-				img(src="/images/picture6.png")
-			li.fl-l
-				img(src="/images/picture7.png")
-			li.fl-l
-				img(src="/images/picture8.png")
+			- var arr = ['/images/picture1.png','/images/picture2.png','/images/picture3.png','/images/picture4.png','/images/picture5.png','/images/picture6.png','/images/picture7.png','/images/picture8.png'];
+			each item in arr
+					li.fl-l
+						img(src=item)
 		ul.picture-list2.picture-list
-			li.fl-l
-				img(src="/images/picture2.png")
-			li.fl-l
-				img(src="/images/picture1.png")
-			li.fl-l
-				img(src="/images/picture3.png")
-			li.fl-l
-				img(src="/images/picture4.png")
-			li.fl-l
-				img(src="/images/picture5.png")
-			li.fl-l
-				img(src="/images/picture6.png")
-			li.fl-l
-				img(src="/images/picture7.png")
-			li.fl-l
-				img(src="/images/picture8.png")
+			- var arr = ['/images/picture2.png','/images/picture1.png','/images/picture3.png','/images/picture4.png','/images/picture5.png','/images/picture6.png','/images/picture7.png','/images/picture8.png'];
+			each item in arr
+					li.fl-l
+						img(src=item)
 		ul.picture-list3.picture-list
-			li.fl-l
-				img(src="/images/picture3.png")
-			li.fl-l
-				img(src="/images/picture2.png")
-			li.fl-l
-				img(src="/images/picture1.png")
-			li.fl-l
-				img(src="/images/picture4.png")
-			li.fl-l
-				img(src="/images/picture5.png")
-			li.fl-l
-				img(src="/images/picture6.png")
-			li.fl-l
-				img(src="/images/picture7.png")
-			li.fl-l
-				img(src="/images/picture8.png")
+			- var arr = ['/images/picture3.png','/images/picture2.png','/images/picture1.png','/images/picture4.png','/images/picture5.png','/images/picture6.png','/images/picture7.png','/images/picture8.png'];
+			each item in arr
+					li.fl-l
+						img(src=item)
 		ul.picture-list4.picture-list
-			li.fl-l
-				img(src="/images/picture4.png")
-			li.fl-l
-				img(src="/images/picture2.png")
-			li.fl-l
-				img(src="/images/picture3.png")
-			li.fl-l
-				img(src="/images/picture1.png")
-			li.fl-l
-				img(src="/images/picture5.png")
-			li.fl-l
-				img(src="/images/picture6.png")
-			li.fl-l
-				img(src="/images/picture7.png")
-			li.fl-l
-				img(src="/images/picture8.png")
+			- var arr = ['/images/picture4.png','/images/picture2.png','/images/picture3.png','/images/picture1.png','/images/picture5.png','/images/picture6.png','/images/picture7.png','/images/picture8.png'];
+			each item in arr
+					li.fl-l
+						img(src=item)
 		ul.picture-list5.picture-list
-			li.fl-l
-				img(src="/images/picture5.png")
-			li.fl-l
-				img(src="/images/picture2.png")
-			li.fl-l
-				img(src="/images/picture3.png")
-			li.fl-l
-				img(src="/images/picture4.png")
-			li.fl-l
-				img(src="/images/picture1.png")
-			li.fl-l
-				img(src="/images/picture6.png")
-			li.fl-l
-				img(src="/images/picture7.png")
-			li.fl-l
-				img(src="/images/picture8.png")
+			- var arr = ['/images/picture5.png','/images/picture2.png','/images/picture3.png','/images/picture4.png','/images/picture1.png','/images/picture6.png','/images/picture7.png','/images/picture8.png'];
+			each item in arr
+					li.fl-l
+						img(src=item)
 	.article2
 		.article2-left.fl-l
 			.box-title 会场内外
 				a.more-right(href="javascrit:;") 更多
 			ul.content-list
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
+				- var arr = ['新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月丨统一全党思想、推动全面调整 1963年:石油基本自给','新中国峥嵘岁月｜“搞一个实事求是年” 勇攀世界高峰','新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？'];
+				each item in arr
+					li.content-list-li
+						span.fl-l ·
+						a.fl-r(href="javascrit:;")= item
 		.article2-right.fl-r
 			.box-title 媒体报道
 				a.more-right(href="javascrit:;") 更多
 			ul.content-list
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月｜加快构建中国特色哲学社会科学
-				li.content-list-li
-					a(href="javascrit:;") 问答70年”，为何《我的祖国》成为最感人的歌？
-				li.content-list-li
-					a(href="javascrit:;") 新中国峥嵘岁月丨统一全党思想、推动全面调整1963年：石油基本自给石油基本自给
+				- var arr = ['新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月丨统一全党思想、推动全面调整 1963年:石油基本自给','新中国峥嵘岁月｜“搞一个实事求是年” 勇攀世界高峰','新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？'];
+				each item in arr
+					li.content-list-li
+						span.fl-l ·
+						a.fl-r(href="javascrit:;")= item

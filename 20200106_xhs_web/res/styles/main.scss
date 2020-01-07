@@ -75,10 +75,9 @@ title 样式
   color: #cb0000;
   font-size: 30px;
   font-weight: bold;
-  position: relative;
   @include cover('title-bg.png', '190px 19px', '0 bottom');
   .more-right{
-    position: absolute;
+    float: right;
     margin: 36px 4px 0 0;
     right: 0;
     color: #999;
@@ -326,26 +325,22 @@ article2 | 会场内外 & 媒体报道
       font-size: 16px;
       padding-top: 36px;
       .content-list-li{
-        position: relative;
-        text-indent: 28px;
         height: 47px;
-        line-height: 47px;
+        line-height: 46px;
+        span{
+          text-indent: 4px;
+          line-height: 42px;
+          font-size: 60px;
+          color: #cb0000;
+        }
         a{
           color: #333;
           display: inline-block;
-          width: 553px;
+          width: 526px;
           @include nowrap();
           @media screen and (-webkit-min-device-pixel-ratio:0) {
             @include nowrapbyline(1);
           }
-        }
-        &::before{
-          position: absolute;
-          left: -26px;
-          top: -2px;
-          content: "·";
-          font-size: 60px;
-          color: #cb0000;
         }
       }
     }
@@ -353,15 +348,6 @@ article2 | 会场内外 & 媒体报道
   .article1-right,
   .article2-right{
     width: 550px;
-    .content-list-li{
-      a{
-        width: 550px;
-        @include nowrap();
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-          @include nowrapbyline(1);
-        }
-      }
-    }
   }
   .article1{
     padding: 62px 0 38px;
