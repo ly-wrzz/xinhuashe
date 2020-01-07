@@ -1,8 +1,9 @@
 $(function () {
     const xinHuaShe = {
-        init: function() {
+        Init: function() {
             this.OnSiteDirectStrike();
             this.GoodVoiceAction();
+            this.CalendarAction();
         },
         // 现场直击
         OnSiteDirectStrike: function() {
@@ -18,7 +19,9 @@ $(function () {
         GoodVoiceAction: function() {
             const count = $('.slide_box .bd ul li').length;
             let pagination = [];
-            Array.from({length: count}, (item, idx) => {pagination.push(`<li>${idx+1}</li>`)})
+            for (let i; i<count; i++) {
+                pagination.push(`<li>${i+1}</li>`);
+            }
             pagination = `<div class="hd"><ul>${pagination.join('')}</ul></div>`;
             $('.slideTxtBox').slide({
                 mainCell:'.bd ul',
@@ -30,7 +33,24 @@ $(function () {
                 mouseOverStop:true,
                 pnLoop:true
             })
-        }
+        },
+        // 日历
+        CalendarAction: function() {
+            const date = new Date();
+            const [month, day, DayList = []] = [`${date.getMonth() + 1}月`, date.getDate()];
+            for (let idx = 0; idx<5; idx++) {
+                switch (idx) {
+                    case 0:
+                        DayList.push(`<li class="fl-l active">${day + idx}日</li>`);
+                        break;
+                    default:
+                        DayList.push(`<li class="fl-l">${day + idx}日</li>`);
+                }
+            };
+            const DayString = DayList.join('');
+            $('.date-day').html(DayString);
+            $('.date-month').html(month);
+        },
     };
-    xinHuaShe.init();
+    xinHuaShe.Init();
 });
