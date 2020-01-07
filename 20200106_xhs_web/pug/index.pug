@@ -39,13 +39,13 @@ body
 				li.fl-l 14日
 			.date-month 1月
 	.line
-	.summary.clearfix
+	.summary.clearfix.article1
 		.lbleft.fl-l
 			.hd
 				ul
-					li
-					li
-					li
+					li.fl-l
+					li.fl-l
+					li.fl-l
 			.bd
 				ul
 					li
@@ -60,7 +60,13 @@ body
 						img(src="images/picture3.png")
 						.text
 							p 市政协常委、民建市委会副主委市政协常委、民建市委会副主委市政协常委、民建市委会副主委
-		.right.fl-l
+		.right.fl-l.article1-right
+			ul.content-list
+				- var arr = ['新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月丨统一全党思想、推动全面调整 1963年:石油基本自给是的发送到','新中国峥嵘岁月｜“搞一个实事求是年” 勇攀世界高峰','新中国峥嵘岁月｜加快构建中国特色哲学社会科学','问答70年”，为何《我的祖国》成为最感人的歌？','新中国峥嵘岁月｜加快构建中国特色哲学社会科学'];
+				each item in arr
+					li.content-list-li
+						span.fl-l ·
+						a.fl-r(href="javascrit:;")= item
 	.picture
 		.box-title 委员好声音
 		.slideTxtBox
