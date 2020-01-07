@@ -64,7 +64,7 @@ textarea,input[type="text"],input[type="tel"]{
 .fl-l{float:left;}
 .fl-r{float:right;}
 /*
-title 样式
+* box-title 样式
 */
 .box-title{
   height: 58px;
@@ -85,8 +85,8 @@ title 样式
   }
 }
 /*
-请开始你的表演
- */
+* 请开始你的表演
+*/
 .baaner{
   width: 100%;
   max-width: 1920px;
@@ -114,9 +114,12 @@ title 样式
   }
 }
 /*
-导航
+* 导航
 */
 .nav{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 48px;
   border-bottom: 4px solid #bda27a;
   background-color: #910000;
@@ -142,7 +145,7 @@ title 样式
   }
 }
 /*
-标题
+* 标题
 */
 .title{
   width: 1184px;
@@ -216,7 +219,52 @@ title 样式
   border-bottom: 1px solid #cccccc;
 }
 /*
-图片 板块
+* GoodVoice
+*/
+.tempWrap{
+  .good-voice-ul{
+    overflow: hidden;
+    .good-voice-li{
+      overflow: hidden;
+      margin-right: 54px;
+      .avatar{
+        width: 133px;
+        height: 133px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .introduce{
+        width: 413px;
+        .name{
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 34px;
+          color: #333333;
+        }
+        .status{
+          font-size: 12px;
+          color: #666666;
+        }
+        .info{
+          width: 413px;
+          height: 93px;
+          font-size: 16px;
+          line-height: 26px;
+          color: #333333;
+        }
+      }
+    }
+    .good-voice-li-no{
+      margin-right: 0;
+    }
+  }
+}
+/*
+* 图片 板块
 */
 .picture{
   width: 1168px;
@@ -317,9 +365,9 @@ title 样式
   }
 }
 /*
-文章 板块
-article1 | 会议动态 & 工作报告
-article2 | 会场内外 & 媒体报道
+* 文章 板块
+* article1 | 会议动态 & 工作报告
+* article2 | 会场内外 & 媒体报道
 */
 .article1,
 .article2{
