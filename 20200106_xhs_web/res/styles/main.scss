@@ -325,18 +325,6 @@ article2 | 会场内外 & 媒体报道
         text-indent: 28px;
         height: 47px;
         line-height: 47px;
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            a{
-              color: #333;
-              display: inline-block;
-              width: 553px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: 1;
-            }
-        }
         a{
           color: #333;
           display: inline-block;
@@ -346,7 +334,7 @@ article2 | 会场内外 & 媒体报道
             @include nowrapbyline(1);
           }
         }
-        &:before{
+        &::before{
           position: absolute;
           left: -26px;
           top: -2px;
@@ -363,6 +351,10 @@ article2 | 会场内外 & 媒体报道
     .content-list-li{
       a{
         width: 550px;
+        @include nowrap();
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+          @include nowrapbyline(1);
+        }
       }
     }
   }
