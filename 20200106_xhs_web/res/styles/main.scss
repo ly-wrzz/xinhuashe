@@ -295,7 +295,12 @@ textarea,input[type="text"],input[type="tel"]{
         display: inline-block;
         width: 50px;
         height: 10px;
-        background-color: red;
+        margin-right: 22px;
+        background-color: #ccc;
+        border-radius: 8px;
+        &.on{
+          background-color: #cb0000;
+        }
       }
     }
   }
@@ -304,6 +309,7 @@ textarea,input[type="text"],input[type="tel"]{
     .good-voice-li{
       overflow: hidden;
       margin-right: 54px;
+      margin-bottom: 68px;
       .avatar{
         width: 133px;
         height: 133px;
@@ -321,18 +327,25 @@ textarea,input[type="text"],input[type="tel"]{
           font-size: 20px;
           font-weight: bold;
           line-height: 34px;
-          color: #333333;
+          color: #333;
+          text-indent: 26px;
         }
         .status{
           font-size: 12px;
-          color: #666666;
+          color: #666;
+          text-indent: 26px;
+          margin-bottom: 14px;
         }
         .info{
-          width: 413px;
-          height: 93px;
+          width: 366px;
+          height: 84px;
           font-size: 16px;
           line-height: 26px;
-          color: #333333;
+          margin-left: 14px;
+          padding: 10px 16px 0 26px;
+          color: #333;
+          @include cover('good-voice-bg.png');
+          @include nowrapbyline(3);
         }
       }
     }
