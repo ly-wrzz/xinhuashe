@@ -1,8 +1,9 @@
 $(function () {
     const xinHuaShe = {
-        init: function() {
+        Init: function() {
             this.OnSiteDirectStrike();
             this.GoodVoiceAction();
+            this.CalendarAction();
         },
         // 现场直击
         OnSiteDirectStrike: function() {
@@ -30,7 +31,24 @@ $(function () {
                 mouseOverStop:true,
                 pnLoop:true
             })
-        }
+        },
+        // 日历
+        CalendarAction: function() {
+            const date = new Date();
+            const [month, day, DayList = []] = [`${date.getMonth() + 1}月`, date.getDate()];
+            Array.from({length: 5}, (it, idx) => {
+                switch (idx) {
+                    case 0:
+                        DayList.push(`<li class="fl-l active">${day + idx}日</li>`);
+                        break;
+                    default:
+                        DayList.push(`<li class="fl-l">${day + idx}日</li>`);
+                }
+            });
+            const DayString = DayList.join('');
+            $('.date-day').html(DayString);
+            $('.date-month').html(month);
+        },
     };
-    xinHuaShe.init();
+    xinHuaShe.Init();
 });
