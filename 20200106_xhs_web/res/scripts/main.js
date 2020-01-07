@@ -89,7 +89,7 @@ $(function () {
                 mainCell:'.bd ul',
                 effect:'left',
                 trigger:'mouseover',
-                // autoPlay:true,
+                autoPlay:true,
                 easing:'swing',
                 delayTime:800,
                 mouseOverStop:true,
