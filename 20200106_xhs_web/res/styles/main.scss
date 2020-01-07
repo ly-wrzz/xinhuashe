@@ -329,7 +329,7 @@ textarea,input[type="text"],input[type="tel"]{
       cursor: pointer;
       @include cover("picture-title1.png","100% 100%","0px 0px");
       &.li1{
-        width: 179px;
+        width: 198px;
       }
       &.li2{
         left: 168px;
@@ -349,11 +349,11 @@ textarea,input[type="text"],input[type="tel"]{
       }
       &.active{
         color: #fff;
-        width: 196px;
         height: 44px;
+        z-index: 8;
         @include cover("picture-title-actbg.png","100% 100%","0px 0px");
         &.li1{
-          width: 179px;
+          height: 42px;
           @include cover("picture-title-actbg1.png","100% 100%","0px 0px");
           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
           src='picture-title-actbg.png',
