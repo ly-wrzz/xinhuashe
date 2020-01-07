@@ -402,7 +402,7 @@ textarea,input[type="text"],input[type="tel"]{
       cursor: pointer;
       @include cover("picture-title1.png","100% 100%","0px 0px");
       &.li1{
-        width: 178px;;
+        width: 178px;
       }
       &.li2{
         left: 168px;
@@ -421,13 +421,10 @@ textarea,input[type="text"],input[type="tel"]{
         @include cover("picture-title5.png","100% 100%","0px 0px");
       }
       &.active{
+        width: 196px;
         color: #fff;
-        height: 44px;
-        z-index: 8;
         @include cover("picture-title-actbg.png","100% 100%","0px 0px");
         &.li1{
-          height: 42px;
-          z-index: 2;
           width: 178px;
           @include cover("picture-title-actbg1.png","100% 100%","0px 0px");
           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
@@ -523,6 +520,13 @@ textarea,input[type="text"],input[type="tel"]{
   .article1{
     padding: 62px 0 38px;
   }
+}
+.article1{
+  padding: 0;
+  margin-bottom: 70px;
+}
+.picture1{
+  margin-top: 66px;
 }
 .summary{
   padding: 0;
