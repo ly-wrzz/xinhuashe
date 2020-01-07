@@ -100,7 +100,7 @@ title 样式
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  background: url("title-bg.png?v=b5579a") 0 bottom no-repeat ;
+  background: url("title-bg.png?v=8c9d38") 0 bottom no-repeat ;
   background-size: 190px 19px; }
   .box-title .more-right {
     position: absolute;
@@ -117,7 +117,7 @@ title 样式
   max-width: 1920px;
   margin: 0 auto;
   height: 500px;
-  background: url("banner.jpg?v=b5579a") center center no-repeat ;
+  background: url("banner.jpg?v=8c9d38") center center no-repeat ;
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
@@ -134,7 +134,7 @@ title 样式
     margin: 60px auto 0;
     width: 66px;
     height: 68px;
-    background: url("badge.png?v=b5579a") center center no-repeat ;
+    background: url("badge.png?v=8c9d38") center center no-repeat ;
     background-size: 100% 100%; }
 
 /*
@@ -172,7 +172,7 @@ title 样式
     margin-top: 4px;
     width: 102px;
     height: 86px;
-    background: url("headlines.png?v=b5579a") center center no-repeat ;
+    background: url("headlines.png?v=8c9d38") center center no-repeat ;
     background-size: 100% 100%; }
   .title .word {
     margin-left: 30px; }
@@ -198,7 +198,7 @@ title 样式
       line-height: 30px;
       text-align: center;
       color: #fff;
-      background: url("date-title.png?v=b5579a") center center no-repeat ;
+      background: url("date-title.png?v=8c9d38") center center no-repeat ;
       background-size: 100% 100%;
       text-indent: 8px;
       letter-spacing: 8px; }
@@ -245,34 +245,35 @@ title 样式
       font-weight: bold;
       color: #d3a4a4;
       cursor: pointer;
-      background: url("picture-title1.png?v=b5579a") center center no-repeat ;
+      background: url("picture-title1.png?v=8c9d38") center center no-repeat ;
       background-size: 100% 100%; }
       .picture .picture-title li.li2 {
         left: 180px;
-        background: url("picture-title2.png?v=b5579a") center center no-repeat ;
+        background: url("picture-title2.png?v=8c9d38") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li3 {
         left: 360px;
-        background: url("picture-title2.png?v=b5579a") center center no-repeat ;
+        background: url("picture-title2.png?v=8c9d38") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li4 {
         left: 540px;
-        background: url("picture-title2.png?v=b5579a") center center no-repeat ;
+        background: url("picture-title2.png?v=8c9d38") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.li5 {
         left: 720px;
-        background: url("picture-title5.png?v=b5579a") center center no-repeat ;
+        background: url("picture-title5.png?v=8c9d38") center center no-repeat ;
         background-size: 100% 100%; }
       .picture .picture-title li.active {
         color: #fff;
         width: 190px;
-        background: url("picture-title-actbg.png?v=b5579a") center center no-repeat ;
+        height: 44px;
+        background: url("picture-title-actbg.png?v=8c9d38") center center no-repeat ;
         background-size: 100% 100%; }
         .picture .picture-title li.active.li1 {
-          background: url("picture-title-actbg1.png?v=b5579a") center center no-repeat ;
+          background: url("picture-title-actbg1.png?v=8c9d38") center center no-repeat ;
           background-size: 100% 100%; }
         .picture .picture-title li.active.li5 {
-          background: url("picture-title-actbg5.png?v=b5579a") center center no-repeat ;
+          background: url("picture-title-actbg5.png?v=8c9d38") center center no-repeat ;
           background-size: 100% 100%; }
   .picture .picture-list1,
   .picture .picture-list2,
@@ -353,6 +354,23 @@ article2 | 会场内外 & 媒体报道
         text-indent: 28px;
         height: 47px;
         line-height: 47px; }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .article1 .article1-left .content-list .content-list-li a,
+          .article1 .article1-right .content-list .content-list-li a,
+          .article1 .article2-left .content-list .content-list-li a,
+          .article1 .article2-right .content-list .content-list-li a,
+          .article2 .article1-left .content-list .content-list-li a,
+          .article2 .article1-right .content-list .content-list-li a,
+          .article2 .article2-left .content-list .content-list-li a,
+          .article2 .article2-right .content-list .content-list-li a {
+            color: #333;
+            display: inline-block;
+            width: 553px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1; } }
         .article1 .article1-left .content-list .content-list-li a,
         .article1 .article1-right .content-list .content-list-li a,
         .article1 .article2-left .content-list .content-list-li a,
@@ -362,10 +380,26 @@ article2 | 会场内外 & 媒体报道
         .article2 .article2-left .content-list .content-list-li a,
         .article2 .article2-right .content-list .content-list-li a {
           color: #333;
-          display: block;
+          display: inline-block;
+          width: 553px;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap; }
+          @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .article1 .article1-left .content-list .content-list-li a,
+            .article1 .article1-right .content-list .content-list-li a,
+            .article1 .article2-left .content-list .content-list-li a,
+            .article1 .article2-right .content-list .content-list-li a,
+            .article2 .article1-left .content-list .content-list-li a,
+            .article2 .article1-right .content-list .content-list-li a,
+            .article2 .article2-left .content-list .content-list-li a,
+            .article2 .article2-right .content-list .content-list-li a {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              -webkit-line-clamp: 1; } }
         .article1 .article1-left .content-list .content-list-li:before,
         .article1 .article1-right .content-list .content-list-li:before,
         .article1 .article2-left .content-list .content-list-li:before,
@@ -385,6 +419,11 @@ article2 | 会场内外 & 媒体报道
   .article2 .article1-right,
   .article2 .article2-right {
     width: 550px; }
+    .article1 .article1-right .content-list-li a,
+    .article1 .article2-right .content-list-li a,
+    .article2 .article1-right .content-list-li a,
+    .article2 .article2-right .content-list-li a {
+      width: 550px; }
   .article1 .article1,
   .article2 .article1 {
     padding: 62px 0 38px; }
