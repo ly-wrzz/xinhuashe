@@ -256,7 +256,7 @@ textarea,input[type="text"],input[type="tel"]{
       bottom: 0;
       width: 100%;
       height: 50px;
-      @include cover("rgba.png")
+      @include cover("rgba.png");
       p{
         line-height: 50px;
         margin-left: 20px;
