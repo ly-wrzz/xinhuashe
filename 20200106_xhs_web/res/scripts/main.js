@@ -62,19 +62,46 @@ $(function () {
 		speed: 600 // 滚动速度 越大越慢
 	});
     const xinHuaShe = {
+        time: "",
         Init: function() {
             this.OnSiteDirectStrike();
             this.GoodVoiceAction();
-            this.CalendarAction();
+            // this.CalendarAction();
         },
         // 现场直击
         OnSiteDirectStrike: function() {
+            var that = this;
             // 现场直击导航切换js
+            var key = 1;
+            this.time = setInterval(()=>{
+                key ++;
+                if (key >= 6) {
+                    key = 1
+                }
+                $('.picture-title li').removeClass('active');
+                $($('.picture-title li')[key-1]).addClass('active')
+                $('.picture-list').hide();
+                $(`.picture-list${key}`).show();
+            },2000);
+
             $('.picture-title li').on('click', function(){
                 const index = $(this).index() + 1;
                 $(this).addClass('active').siblings().removeClass('active');
                 $('.picture-list').hide();
                 $(`.picture-list${index}`).show();
+                key = $(this).index() + 2;
+                clearInterval(that.time);
+                that.time = "";
+                that.time = setInterval(()=>{
+                    $('.picture-title li').removeClass('active');
+                    $($('.picture-title li')[key-1]).addClass('active')
+                    $('.picture-list').hide();
+                    $(`.picture-list${key}`).show();
+                    key ++;
+                    if (key >= 6) {
+                        key = 1
+                    }
+                },2000);
             });
         },
         // 好声音轮播
@@ -96,12 +123,12 @@ $(function () {
                 pnLoop:true
             })
 
-            const counts = $('.lbleft .bd ul li').length;
-            let paginations = [];
-            for (let i; i<counts; i++) {
-                paginations.push(`<li>${i+1}</li>`);
+            const count1 = $('.lbleft .bd ul li').length;
+            let pagination2 = [];
+            for (let i; i<count1; i++) {
+                pagination2.push(`<li>${i+1}</li>`);
             }
-            paginations = `<div class="hd"><ul>${paginations.join('')}</ul></div>`;
+            pagination2 = `<div class="hd"><ul>${pagination2.join('')}</ul></div>`;
             $('.lbleft').slide({
                 mainCell:'.bd ul',
                 effect:'left',
@@ -112,6 +139,24 @@ $(function () {
                 mouseOverStop:true,
                 pnLoop:true
             })
+
+            const count2 = $('.title .bd ul li').length;
+            let pagination3 = [];
+            for (let i; i<count2; i++) {
+                pagination3.push(`<li>${i+1}</li>`);
+            }
+            pagination3 = `<div class="hd"><ul>${pagination3.join('')}</ul></div>`;
+            $('.title').slide({
+                mainCell:'.bd ul',
+                effect:'top',
+                trigger:'click',
+                autoPlay:true,
+                easing:'swing',
+                delayTime:800,
+                mouseOverStop:true,
+                pnLoop:true
+            })
+            
         },
         // 日历
         CalendarAction: function() {
