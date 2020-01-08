@@ -6,3 +6,5 @@ yarn.lock
 20200106_xhs_web/images/main.css
 20200106_xhs_web/res/styles/main.css
 20200106_xhs_web/images/main.js
+*.zip
+*.rar
