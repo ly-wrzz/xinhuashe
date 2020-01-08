@@ -160,11 +160,13 @@ textarea,input[type="text"],input[type="tel"]{
   }
   .word{
     margin-left: 30px;
+    width: 738px;
     height: 90px;
     h1{
       padding-top: 8px;
       color: #cb0000;
       font-size: 46px;
+      height: 46px;
       font-weight: bold;
       @include nowrap();
       @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -173,10 +175,16 @@ textarea,input[type="text"],input[type="tel"]{
     }
     p{
       padding-top: 20px;
-      width: 100%;
+      width: 738px;
+      margin: 0 auto;
       text-align: center;
       font-size: 16px;
+      height: 16px;
       color: #999999;
+      @include nowrap();
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @include nowrapbyline(1);
+      }
     }
   }
   .date{
@@ -207,9 +215,11 @@ textarea,input[type="text"],input[type="tel"]{
         &:first-child{
           margin-left: 4px;
         }
-        cursor: pointer;
-        &.on{
-          color: #cb0000;
+        a{
+          color: #6b4632;
+          &:hover{
+            color: #cb0000;
+          }
         }
       }
     }
@@ -332,9 +342,9 @@ textarea,input[type="text"],input[type="tel"]{
   }
   .good-voice-ul{
     overflow: hidden;
+    width: 1210px;
     .good-voice-li{
-      overflow: hidden;
-      margin-right: 42px;
+      padding-right: 42px;
       margin-bottom: 68px;
       .avatar{
         width: 129px;
@@ -517,6 +527,7 @@ textarea,input[type="text"],input[type="tel"]{
           color: #333;
           display: inline-block;
           width: 526px;
+          height: 36px;
           @include nowrap();
           @media screen and (-webkit-min-device-pixel-ratio:0) {
             @include nowrapbyline(1);
@@ -558,6 +569,7 @@ textarea,input[type="text"],input[type="tel"]{
         a{
           width: 530px;
           font-size: 18px;
+          height: 18px;
         }
       }
     }

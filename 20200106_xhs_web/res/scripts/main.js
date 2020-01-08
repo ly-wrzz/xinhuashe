@@ -116,7 +116,7 @@ $(function () {
                 mainCell:'.bd ul',
                 effect:'left',
                 trigger:'mouseover',
-                autoPlay:true,
+                // autoPlay:true,
                 easing:'swing',
                 delayTime:800,
                 mouseOverStop:true,
@@ -139,24 +139,6 @@ $(function () {
                 mouseOverStop:true,
                 pnLoop:true
             })
-
-            const count2 = $('.title .bd ul li').length;
-            let pagination3 = [];
-            for (let i; i<count2; i++) {
-                pagination3.push(`<li>${i+1}</li>`);
-            }
-            pagination3 = `<div class="hd"><ul>${pagination3.join('')}</ul></div>`;
-            $('.title').slide({
-                mainCell:'.bd ul',
-                effect:'top',
-                trigger:'click',
-                autoPlay:true,
-                easing:'swing',
-                delayTime:800,
-                mouseOverStop:true,
-                pnLoop:true
-            })
-            
         },
         // 日历
         CalendarAction: function() {
