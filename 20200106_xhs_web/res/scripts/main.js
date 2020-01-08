@@ -44,7 +44,7 @@ $(function () {
                         name = config.className4 + 5;
                         break;
                 }
-				$('body,html').animate({ 'scrollTop': $(name).offset().top}, config.speed);
+				$('body,html').animate({ 'scrollTop': $(name).offset().top - 40}, config.speed);
 			})
 		},
 		goTop: function (config) {
