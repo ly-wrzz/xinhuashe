@@ -82,26 +82,26 @@ $(function () {
                 $($('.picture-title li')[key-1]).addClass('active')
                 $('.picture-list').hide();
                 $(`.picture-list${key}`).show();
-            },2000);
+            },3000);
 
             $('.picture-title li').on('click', function(){
                 const index = $(this).index() + 1;
                 $(this).addClass('active').siblings().removeClass('active');
                 $('.picture-list').hide();
                 $(`.picture-list${index}`).show();
-                key = $(this).index() + 2;
+                key = $(this).index() + 1;
                 clearInterval(that.time);
                 that.time = "";
                 that.time = setInterval(()=>{
-                    $('.picture-title li').removeClass('active');
-                    $($('.picture-title li')[key-1]).addClass('active')
-                    $('.picture-list').hide();
-                    $(`.picture-list${key}`).show();
                     key ++;
                     if (key >= 6) {
                         key = 1
                     }
-                },2000);
+                    $('.picture-title li').removeClass('active');
+                    $($('.picture-title li')[key-1]).addClass('active')
+                    $('.picture-list').hide();
+                    $(`.picture-list${key}`).show();
+                },3000);
             });
         },
         // 好声音轮播
