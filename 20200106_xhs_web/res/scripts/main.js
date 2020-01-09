@@ -107,11 +107,12 @@ $(function () {
         // 好声音轮播
         GoodVoiceAction: function() {
             const count = $('.slideTxtBox .bd ul li').length;
-            let pagination = [];
-            for (let i; i<count; i++) {
-                pagination.push(`<li>${i+1}</li>`);
+            var pagination = [];
+            for (var i = 0; i < count; i++) {
+                pagination.push("<li></li>");
             }
-            pagination = `<div class="hd"><ul>${pagination.join('')}</ul></div>`;
+            pagination = "<ul>" + pagination.join('') + "</ul>";
+            $(".slideTxtBox .hd").html(pagination)
             $('.slideTxtBox').slide({
                 mainCell:'.bd ul',
                 effect:'left',
@@ -124,11 +125,12 @@ $(function () {
             })
 
             const count1 = $('.lbleft .bd ul li').length;
-            let pagination2 = [];
-            for (let i; i<count1; i++) {
-                pagination2.push(`<li>${i+1}</li>`);
+            var pagination2 = [];
+            for (var i = 0; i < count1; i++) {
+                pagination2.push("<li class='fl-l'></li>");
             }
-            pagination2 = `<div class="hd"><ul>${pagination2.join('')}</ul></div>`;
+            pagination2 = "<ul>" + pagination2.join('') + "</ul>";
+            $(".lbleft .hd").html(pagination2)
             $('.lbleft').slide({
                 mainCell:'.bd ul',
                 effect:'left',
